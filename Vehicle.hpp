@@ -8,24 +8,19 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+//Base class
 class Vehicle{
     private:
     string manufacturer;
     int yearBuilt;
     
 public:
-    //Default Constructor
-    Vehicle();
-    
-    //Constructor
-    Vehicle(string maker, int year);
+    Vehicle();//Default Constructor
+    Vehicle(string maker, int year);//Constructor
     
     //Accessors
     string getManufacturer() const;
     int getYearBuilt() const;
-    
-    
+    void displayInfo() const;
 };
-
 #endif /* Vehicle_hpp */

@@ -2,13 +2,16 @@
 //CIS 1202 5T1
 //July 27, 2021
 
+#include "Vehicle.hpp"
+#include "Car.hpp"
 #include <iostream>
 #include <string>
-#include "Vehicle.hpp"
+using namespace std;
+
 
 int main() {
     string makeInput;
-    int yearInput;\
+    int yearInput;
     
     //Vehicle
     cout << "Vehicle Program" << endl;
@@ -19,10 +22,6 @@ int main() {
     cout << "Enter the year built: ";
     cin >> yearInput;
     Vehicle Vehicle(makeInput, yearInput);
-    cout << "Vehicle information:" << endl;
-    cout << "Manfacturer: "<< Vehicle.getManufacturer() << endl;
-    cout << "Year Built: " << Vehicle.getYearBuilt() << endl;
-    cout << endl;
     //Car
     
     return 0;

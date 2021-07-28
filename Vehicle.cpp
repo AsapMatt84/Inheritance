@@ -2,9 +2,11 @@
 //CIS 1202 5T1
 //July 27, 2021
 
+#include "Vehicle.hpp"
 #include <iostream>
 #include <string>
-#include "Vehicle.hpp"
+using namespace std;
+
 //Default Constructor
 Vehicle::Vehicle(){
     manufacturer = " ";
@@ -23,4 +25,11 @@ string Vehicle::getManufacturer() const{
 //Get Vehicle Year Build
 int Vehicle::getYearBuilt() const{
     return yearBuilt;
+}
+// Display information for Vehicle
+void Vehicle::displayInfo() const{
+    cout << "Vehicle information:" << endl;
+    cout << "Manfacturer: "<< getManufacturer() << endl;
+    cout << "Year Built: " << getYearBuilt() << endl;
+    cout << endl;
 }
