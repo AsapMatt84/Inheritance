@@ -13,7 +13,6 @@ Truck::Truck() : Vehicle(){
 //Constructor
 Truck::Truck(string maker, int year, int towCap) : Vehicle(maker, year){
     towCapacity = towCap;
-    
 }
 //Display Truck information
 void Truck::displayInfoTruck() const{

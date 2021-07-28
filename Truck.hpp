@@ -17,5 +17,4 @@ class Truck : public Vehicle{
     Truck(string maker, int year, int towCapacity);//Constructor
     void displayInfoTruck() const; //Display Car information
 };
-
 #endif /* Truck_hpp */

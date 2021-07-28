@@ -13,7 +13,7 @@ using namespace std;
 int main() {
     string makeInput;
     int yearInput, doorInput, towingCapacity;
-   
+    
     //Vehicle
     cout << "Vehicle Program" << endl;
     cout << endl;
@@ -24,6 +24,7 @@ int main() {
     cin >> yearInput;
     Vehicle Vehicle(makeInput, yearInput);
     Vehicle.displayInfo();
+    
     //Car
     cout << "Car:" <<endl;
     cout << "Enter the manufacturer: ";
@@ -35,6 +36,7 @@ int main() {
     cin >> doorInput;
     Car Car(makeInput, yearInput, doorInput);
     Car.displayInfoCar();
+    
     //Truck
     cout << "Car:" <<endl;
     cout << "Enter the manufacturer: ";
