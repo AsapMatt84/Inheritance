@@ -13,11 +13,9 @@ using namespace std;
 class Car : public Vehicle{
     protected:
         int doorCount;
-    
     public:
-        Car();
-        Car(string maker, int year, int doors);
+        Car();//Default Constructor
+        Car(string maker, int year, int doors);//Constructor
+        void displayInfoCar() const; //Display Car information
 };
-
-
 #endif /* Car_hpp */
